@@ -17,7 +17,7 @@ public class CalculoIMC {
         double imc = calcularIMC(peso, altura);
         
         // Exibindo o resultado
-        System.out.println("Seu Índice de Massa Corporal (IMC) é: " + imc);
+        System.out.println("Seu indice de Massa Corporal (IMC) eh: " + imc);
         
         // Fechando o Scanner
         scanner.close();
