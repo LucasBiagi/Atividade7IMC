@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class CalculoIMC {
+    public static void main(String[] args) {
+        // Criando um objeto Scanner para entrada de dados
+        Scanner scanner = new Scanner(System.in);
+        
+        // Solicitando ao usuário que insira o peso em quilogramas
+        System.out.print("Digite o seu peso em quilogramas: ");
+        double peso = scanner.nextDouble();
+        
+        // Solicitando ao usuário que insira a altura em metros
+        System.out.print("Digite a sua altura em metros: ");
+        double altura = scanner.nextDouble();
+        
+        // Calculando o IMC
+        double imc = calcularIMC(peso, altura);
+        
+        // Exibindo o resultado
+        System.out.println("Seu Índice de Massa Corporal (IMC) é: " + imc);
+        
+        // Fechando o Scanner
+        scanner.close();
+    }
+    
+    // Método para calcular o IMC
+    public static double calcularIMC(double peso, double altura) {
+        return peso / (altura * altura);
+    }
+}
